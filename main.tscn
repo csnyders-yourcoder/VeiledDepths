@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bwg0pqo2ud1ov"]
+
+[ext_resource type="PackedScene" uid="uid://dgg8no7pb4bu0" path="res://scenes/combat/battle_scene.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bwph40m22mlky" path="res://scenes/combat/battle_scene.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=923546018]
+
+[node name="BattleScene" parent="." unique_id=286254521 instance=ExtResource("1_ig7tw")]
+script = ExtResource("2_0xm2m")
+
+[node name="HeroHP" type="Label" parent="BattleScene" unique_id=793868600]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 150.0
+offset_bottom = 123.0
+text = "Hero HP: 100"
+
+[node name="EnemyHP" type="Label" parent="BattleScene" unique_id=566273389]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 100.0
+offset_right = 615.0
+offset_bottom = 123.0
+text = "Enemy HP: 100"
+
+[node name="AttackButton" type="Button" parent="BattleScene" unique_id=921867666]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 380.0
+offset_right = 534.0
+offset_bottom = 411.0
+text = "Attack"
+
+[node name="StatusLabel" type="Label" parent="BattleScene" unique_id=1440848332]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 280.0
+offset_right = 479.0
+offset_bottom = 303.0
+text = "Your turn!"
+
+[node name="RestartButton" type="Button" parent="BattleScene" unique_id=1336159059]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 440.0
+offset_right = 550.0
+offset_bottom = 471.0
+text = "Play Again"
