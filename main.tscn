@@ -47,3 +47,11 @@ offset_top = 440.0
 offset_right = 550.0
 offset_bottom = 471.0
 text = "Play Again"
+
+[node name="StressLabel" type="Label" parent="BattleScene" unique_id=2103168498]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 80.0
+offset_right = 115.0
+offset_bottom = 103.0
+text = "Stress: 0"
